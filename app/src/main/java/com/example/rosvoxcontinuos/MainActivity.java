@@ -47,24 +47,26 @@ public class MainActivity extends RosActivity implements
     private TextView editText;
     static String SaidaVoz;
     private Listener listener;
+   
+    /*
     RelativeLayout layout_joystick;
     ImageView image_joystick, image_border;
     TextView textView1, textView2, textView3, textView4, textView5;
 
     JoyStickClass js;
-    Button botao;
+    Button botao;*/
     ImageButton up,down,left,right,stop;
 
+
+    public MainActivity() {
+        super("RosVoxContinuos", "RosVoxContinuos");
+    }
+        
     public static void setSaidaVoz(String saidaVoz) {
         SaidaVoz = saidaVoz;
     }
     public static String getSaidaVoz() {
         return SaidaVoz;
-    }
-
-
-    public MainActivity() {
-        super("RosVoxContinuos", "RosVoxContinuos");
     }
 
     private void resetSpeechRecognizer() {
